@@ -38,46 +38,8 @@ def distancia_recorrida(t,v):
 	return print('La distancia recorrida es: '+ str(distancia))
 
 
-=======
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# economia
 
 
 def tasa_actividad(poblacion_activa, poblacion_total):
@@ -96,15 +58,3 @@ def rentabilidad_economica(bait, activo):
     resultado = (bait / activo) * 100
     return resultado
 
-
-
-# if __name__ == "__main__":
-    
-# tasa_actividad()
-
-# tasa_actividad()
-
-# tasa_paro()
-
-# rentabilidad_economica()
->>>>>>> e2858318d5ead4d8ba1012e43105efae42f6e71a

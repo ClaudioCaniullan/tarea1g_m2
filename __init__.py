@@ -11,10 +11,6 @@ from .nuevos_calculos import tasa_ocupacion
 from .nuevos_calculos import tasa_paro
 from .nuevos_calculos import rentabilidad_economica
 
-# init funciones fisica
-from .nuevos_calculos import area_circulo, perimetro_circulo
-from .nuevos_calculos import area_triangulo_rec, perimetro_triangulo_rec
-from .nuevos_calculos import area_rectangulo, perimetro_rectangulo, distancia_recorrida
 
 
 

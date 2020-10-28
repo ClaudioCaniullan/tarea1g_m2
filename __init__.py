@@ -24,7 +24,10 @@ from .nuevos_calculos import rentabilidad_economica
 
 from .nuevos_calculos import velocidad, distancia, tiempo, aceleracion
 
-from nuevos_calculos import valorPonderadoProducto,calcularSueldo,pagoAduana,agregarIVA
+
+
+
+from .nuevos_calculos import valorPonderadoProducto,calcularSueldo,pagoAduana,agregarIVA
 
 
 

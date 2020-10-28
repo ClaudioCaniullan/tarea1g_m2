@@ -95,5 +95,65 @@ def aceleracion():
     aceleración=v4/t4
     return print("la aceleración es:"+str(aceleración))
 
+#logistica
+
+def calcularSueldo():
+    SueldoBase = int(input("Ingrese su Sueldo: $"))
+    GratificacionLegal = SueldoBase * 0.10
+    SueldoBruto = SueldoBase + GratificacionLegal
+    descuento_AFP = SueldoBruto * 0.07
+    descuento_AFP = int(descuento_AFP)
+    descuento_ISAPRE = SueldoBruto * 0.07
+    descuento_ISAPRE = int(descuento_ISAPRE)
+    seguro_cesantia = SueldoBruto * 0.02
+    seguro_cesantia = int(seguro_cesantia)
+    SueldoLiquido = SueldoBruto - descuento_AFP - descuento_ISAPRE - seguro_cesantia
+    SueldoLiquido = int(SueldoLiquido)
+    return print(" ### Sueldo Liquido: $ "+ str(SueldoLiquido)+
+                "\n ### Descuento AFP: $ "+ str(descuento_AFP)+
+                "\n ### Descuento Isapre: $ "+ str(descuento_ISAPRE)+
+                "\n ### Seguro de cesantia: $ "+ str(seguro_cesantia))         
+calcularSueldo()
+
+def valorPonderadoProducto():
+    prod_x_provedoor1 = 100 #valor_producto
+    prod_x_proveedor2 = 350 #valor_producto
+
+
+    
+    prod_x_proveedor3 = 400 #valor_producto
+    cantidad_proveedor_1 = 150 #unidades
+    cantidad_proveedor_2 = 20 #unidades
+    cantidad_proveedor_3 = 120 #unidades
+
+    #logica
+    valor_x_1 = prod_x_provedoor1 * cantidad_proveedor_1 #calculo valor total producto
+    valor_x_2 = prod_x_proveedor2 * cantidad_proveedor_2 #calculo valor total producto
+    valor_x_3 = prod_x_proveedor3 * cantidad_proveedor_3 #calculo valor total producto
+    
+    totalPonderado = valor_x_1 + valor_x_2 + valor_x_3 #totales productos $
+    total_cantidad = cantidad_proveedor_1 + cantidad_proveedor_2 + cantidad_proveedor_3 #totalProductos
+
+    promedioPonderadoProducto = totalPonderado / total_cantidad #Ponderado de los 3 proveedores
+    promedioPonderadoProducto = int(promedioPonderadoProducto)
+
+    
+    print("El valor ponderado es: $" +str(promedioPonderadoProducto))
+
+def pagoAduana():
+    valorFactura = int(input("Total Factura: $")) #preciofactura
+    derecho_aduanero = valorFactura * 0.06 # porcentaje de cobro aduana
+    agregar_IVA = (valorFactura + derecho_aduanero) * 0.19 # iba sobre impuesto aduanero
+    valorFinal = valorFactura + derecho_aduanero + agregar_IVA # valor final con impuesto aduanero
+    valorFinal = int(valorFinal) # transformo el valor a un numero entero
+    
+    print("El costo total con impuestos de aduana es: $ " + str(valorFinal))
+
+def agregarIVA():
+        precio = float(input("Ingrese el precio de su producto: "))
+        valor_iva = precio * 0.16
+        print("El IVA de su producto es: ", valor_iva)
+        ptotal = precio + valor_iva
+        print("El precio total es de: ", ptotal)
 
 

@@ -116,12 +116,10 @@ def calcularSueldo():
 calcularSueldo()
 
 def valorPonderadoProducto():
-    prod_x_provedoor1 = 100 #valor_producto
-    prod_x_proveedor2 = 350 #valor_producto
+    prod_x_provedoor1 = int(input("Ingrese valor del proveedor_1: $"))
+    prod_x_proveedor2 = int(input("Ingrese valor del proveedor_2: $"))
+    prod_x_proveedor3 = int(input("Ingrese valor del proveedor_3: $"))
 
-
-    
-    prod_x_proveedor3 = 400 #valor_producto
     cantidad_proveedor_1 = 150 #unidades
     cantidad_proveedor_2 = 20 #unidades
     cantidad_proveedor_3 = 120 #unidades
@@ -138,7 +136,8 @@ def valorPonderadoProducto():
     promedioPonderadoProducto = int(promedioPonderadoProducto)
 
     
-    print("El valor ponderado es: $" +str(promedioPonderadoProducto))
+    return print("El valor ponderado es: $" +str(promedioPonderadoProducto))
+valorPonderadoProducto()
 
 def pagoAduana():
     valorFactura = int(input("Total Factura: $")) #preciofactura
@@ -147,13 +146,15 @@ def pagoAduana():
     valorFinal = valorFactura + derecho_aduanero + agregar_IVA # valor final con impuesto aduanero
     valorFinal = int(valorFinal) # transformo el valor a un numero entero
     
-    print("El costo total con impuestos de aduana es: $ " + str(valorFinal))
+    return print("El costo total con impuestos de aduana es: $ " + str(valorFinal))
+pagoAduana()
 
 def agregarIVA():
         precio = float(input("Ingrese el precio de su producto: "))
         valor_iva = precio * 0.16
         print("El IVA de su producto es: ", valor_iva)
         ptotal = precio + valor_iva
-        print("El precio total es de: ", ptotal)
+        return print("El precio total es de: ", ptotal)
+agregarIVA()
 
 

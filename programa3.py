@@ -1,4 +1,4 @@
-import paquete_cientifico2 as p2
+import paquete_cientifico as p2
 
 def calcular2():
     resultado=p2.velocidad()
@@ -12,4 +12,5 @@ def calcular2():
 
 if __name__ == '__main__':
     calcular2()
+    input()
     

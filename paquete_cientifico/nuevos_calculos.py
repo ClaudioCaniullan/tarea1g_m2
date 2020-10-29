@@ -113,7 +113,7 @@ def calcularSueldo():
                 "\n ### Descuento AFP: $ "+ str(descuento_AFP)+
                 "\n ### Descuento Isapre: $ "+ str(descuento_ISAPRE)+
                 "\n ### Seguro de cesantia: $ "+ str(seguro_cesantia))         
-calcularSueldo()
+
 
 def valorPonderadoProducto():
     prod_x_provedoor1 = int(input("Ingrese valor del proveedor_1: $"))
@@ -137,7 +137,8 @@ def valorPonderadoProducto():
 
     
     return print("El valor ponderado es: $" +str(promedioPonderadoProducto))
-valorPonderadoProducto()
+
+
 
 def pagoAduana():
     valorFactura = int(input("Total Factura: $")) #preciofactura
@@ -147,7 +148,9 @@ def pagoAduana():
     valorFinal = int(valorFinal) # transformo el valor a un numero entero
     
     return print("El costo total con impuestos de aduana es: $ " + str(valorFinal))
-pagoAduana()
+
+
+
 
 def agregarIVA():
         precio = float(input("Ingrese el precio de su producto: "))
@@ -155,6 +158,6 @@ def agregarIVA():
         print("El IVA de su producto es: ", valor_iva)
         ptotal = precio + valor_iva
         return print("El precio total es de: ", ptotal)
-agregarIVA()
+
 
 

@@ -13,6 +13,6 @@ def calcular4():
     add_iva = fnx.agregarIVA()
     print(add_iva)
 
-    if __name__ == "__main__":
-        calcular4()
-        input()
+if __name__ == '__main__':
+calcular4()
+input()

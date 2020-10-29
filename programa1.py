@@ -1,4 +1,4 @@
-import paquete_cientifico1 as p1
+import paquete_cientifico as p1
 
 
 

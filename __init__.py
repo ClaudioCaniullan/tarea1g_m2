@@ -26,12 +26,12 @@ from .nuevos_calculos import velocidad, distancia, tiempo, aceleracion
 
 
 
-<<<<<<< HEAD
+
 from nuevos_calculos import valorPonderadoProducto,calcularSueldo,pagoAduana,agregarIVA
-=======
+
 
 from .nuevos_calculos import valorPonderadoProducto,calcularSueldo,pagoAduana,agregarIVA
->>>>>>> c8deb95a738331d3969dd971b0a888d43f39f195
+
 
 
 
